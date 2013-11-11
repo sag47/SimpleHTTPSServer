@@ -1,6 +1,6 @@
 # SimpleHTTPSServer
 
-It's like a secure pastebin but for files!  Run this command anywhere and you instantly have secure file sharing (assuming you set up signed certificates before hand) based on the current working directory of the command.
+It's like a secure pastebin but for files!  Run this command anywhere and you instantly have secure file sharing (assuming you set up signed certificates before hand) based on the current working directory of the command.  Also be aware that port `8000` will be open for all interfaces so it is assumed you will lock your system down with a firewall and only share to specific IP addresses or IP ranges using a firewall like iptables.
 
 ## Prerequisites
 
@@ -14,10 +14,9 @@ Copy the version of `SimpleHTTPSServer` you want to use to the python modules di
 
 ## Usage
 
-1. Start the https server by simply running SimpleSecureHTTPServer.py for the desired version of Python (2.6 or 2.7).
-
     python -m SimpleHTTPSServer
 
+1. Start the https server by simply running SimpleSecureHTTPServer.py for the desired version of Python (2.6 or 2.7).
 2. Visit `https://localhost:8000/` or `https://yourhost.yourdomain.com:8000`
 
 Note: Other versions of python are untested but still may work.
